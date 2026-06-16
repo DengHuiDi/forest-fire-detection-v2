@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+node_modules/
+.env
+__pycache__/
+*.pyc
+node_modules/
+*.pt
+
+backend/venv/
+backend/venv/
+backend/weights/
+dataset/
