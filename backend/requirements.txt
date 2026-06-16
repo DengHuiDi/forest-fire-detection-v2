@@ -1,0 +1,11 @@
+# Forest Fire Detection Backend
+# IMPORTANT: This backend requires the yolov11_mask conda environment to run:
+#   conda activate yolov11_mask
+#   pip install fastapi uvicorn python-multipart opencv-python
+#
+# The conda environment already has: torch, ultralytics, mmcv, timm, torch_dct, scipy
+#
+fastapi>=0.100.0
+uvicorn>=0.20.0
+python-multipart>=0.0.6
+opencv-python>=4.8.0

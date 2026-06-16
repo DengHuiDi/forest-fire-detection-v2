@@ -1,0 +1,19 @@
+# LLM 多模态模块新增依赖
+# ====================================
+# 安装方式 (在 yolov11_mask_llm conda 环境中):
+#   pip install -r requirements_llm.txt
+#
+# 核心依赖:
+#   - httpx: DeepSeek API HTTP 客户端 (同步, 超时/重试可控)
+#   - pydantic: 数据模型 / FastAPI 序列化
+#
+# 故意没引入:
+#   - openai SDK: 避免和 ultralytics 内部版本冲突,且 httpx 已经够用
+#   - langchain: 这个场景不需要 agent / chain, 直接 prompt + JSON 就够
+#   - python-dotenv: 启动方式决定 (见 main.py 注释),由用户自行选择是否加载
+
+httpx>=0.27.0
+pydantic>=2.5.0
+
+# 可选: 如果想用 .env 文件管理 DEEPSEEK_API_KEY,推荐安装
+# python-dotenv>=1.0.0
